@@ -1,4 +1,4 @@
-package ru.youngstanis.basics.variable
+package ru.youngstanis.kotlinbasics.variable
 
 fun main(args:Array<String>) {
     println("*Variable*")
