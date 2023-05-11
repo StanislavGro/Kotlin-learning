@@ -1,7 +1,7 @@
 package ru.youngstanis.kotlinbasics.variable
 
 fun main(args:Array<String>) {
-    println("*Variable*")
+    println("Lesson 1 Variable")
 
     val numberOFOrders: Int = 42
 
