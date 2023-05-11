@@ -1,4 +1,4 @@
-package ru.youngstanis.kotlininaction.part2
+package ru.youngstanis.kotlininaction.chapter1
 
 fun main() {
     println(max(15, 6))

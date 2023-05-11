@@ -1,4 +1,4 @@
-package ru.youngstanis.testpoligon
+package ru.youngstanis.poligon
 
 fun main(args: Array<String>) {
     stringContainsTest()
