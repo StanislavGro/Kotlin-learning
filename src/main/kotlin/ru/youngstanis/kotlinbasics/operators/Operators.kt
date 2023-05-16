@@ -41,6 +41,11 @@ fun main(args: Array<String>) {
     // val result = (currentGrade == "Middle" || currentGrade == "Senior") or (age >= 27 && age <= 70)
     val result = (currentGrade == "Middle" || currentGrade == "Senior") and (age in 22..70)
     println("- Can you be a lead? $result")
+
+    val programmerRange = age in 15..75
+    println()
+    println(programmerRange)
+
 }
 
 const val templateGrade: String = "Middle"
