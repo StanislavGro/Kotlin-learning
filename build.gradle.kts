@@ -1,3 +1,5 @@
+
+// �� ��� �������
 plugins {
     kotlin("jvm") version "1.8.20"
     application
@@ -12,12 +14,15 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.9.0-Beta")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
 }
 
 tasks.test {
     useJUnitPlatform()
 }
 
+// ��� �����������
 kotlin {
     jvmToolchain(11)
 }
