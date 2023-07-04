@@ -1,17 +1,25 @@
 package ru.youngstanis.kotlininaction.chapter4
 
-open class View {
-    constructor(review: Int) {
-        println("Review is $review degree")
-    }
+class User1 constructor(_nickname: String) {
+    val nickname: String
 
-    constructor(review: Int, objects: List<String>) {
-        println("Review is $review degree and this objects $objects")
+    init {
+        nickname = _nickname
     }
 }
 
-class Vision: View {
-    constructor(review: Int): super(review)
-    constructor(objects: List<String>): this(360, objects)
-    constructor(review: Int, objects: List<String>): super(review, objects)
+class User2(_nickname: String) { // тут без val _nickname является полем
+    val nickname: String = _nickname
+}
+
+class User3(
+    val nickname: String = "Stas",
+    val email: String
+) // а тут nickname уже свойство, поэтому у него есть геттер
+
+fun main() {
+    val user = User3(nickname = "fv", email = "vsdv")
+    val user2 = User3(nickname = "fv", "vsdv")
+    val user3 = User3("fv", email = "vsdv")
+    val user4 = User3("fv", "vsdv")
 }
