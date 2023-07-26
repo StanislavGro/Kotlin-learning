@@ -16,6 +16,7 @@ dependencies {
     testImplementation(kotlin("test"))
     implementation("org.jetbrains.kotlin:kotlin-stdlib:1.9.0-Beta")
     implementation("com.auth0:java-jwt:3.12.1")
+    implementation("joda-time:joda-time:2.12.5")
     testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
 }
 
