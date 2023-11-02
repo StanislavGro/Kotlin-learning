@@ -3,7 +3,8 @@ package ru.youngstanis.poligon
 import java.util.Locale
 
 fun main() {
-    println(Locale.getAvailableLocales().any{ it.language == "kaz" })
+    println(Locale.getAvailableLocales().any{ it.language == "kok" })
+    // Locale.getAvailableLocales().forEach { println(it.language) }
 
     val aplha2Locale = Locale("kk")
     println(aplha2Locale.displayLanguage)
